@@ -1,0 +1,39 @@
+1.
+  English/C description of assembly
+
+int main(){
+  int n = 6;
+  int x[6];
+  int y[6];
+  int i = 0;
+  while(n > 0){
+    y[i] = x[i];
+    i++;
+    n -= 1;
+  }
+  return 0;
+}
+
+---
+
+
+2.
+  Decoded Instruction
+
+  0x993ff915
+  IMM16 = -28
+
+  assembly code:
+  stw r4, -28(r19)
+
+
+---
+
+3. Encoded Instruction
+
+divu r14,r5,r22
+
+00101101100111010010000000111010
+
+answer:
+0x2D9D203A
